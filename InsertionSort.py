@@ -1,4 +1,4 @@
-__author__ = 'stone'
+__author__ = 'ShiYujin'
 __date__ = '2015.5.24'
 def InsertionSort(A):
     for i in range(1, A.__len__()):
