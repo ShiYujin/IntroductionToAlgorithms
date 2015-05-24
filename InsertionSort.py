@@ -1,3 +1,4 @@
+# insertion sort
 __author__ = 'ShiYujin'
 __date__ = '2015.5.24'
 def InsertionSort(A):
@@ -10,7 +11,8 @@ def InsertionSort(A):
         A[j+1] = key
     return A
 
-a = [5, 2, 4, 6, 1, 3]
+# now let's have a try
+a = [31, 41, 59, 26, 41, 58]
 a = InsertionSort(a)
 for i in a:
     print(i)
