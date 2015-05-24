@@ -4,7 +4,7 @@ __date__ = '2015.5.24'
 
 
 def InsertionSort(A):
-    a = A
+    a = A[:]
     for i in range(1, a.__len__()):
         key = a[i]
         j = i - 1

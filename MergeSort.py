@@ -32,7 +32,7 @@ def MSort(A, p, r):
 
 
 def MergeSort(A):
-    a = A
+    a = A[:]
     return MSort(a, 0, a.__len__())
 
 # little test

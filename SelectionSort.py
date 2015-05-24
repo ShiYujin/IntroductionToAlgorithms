@@ -4,7 +4,7 @@ __date__ = '2015.5.24'
 
 
 def SelectionSort(A):
-    a = A
+    a = A[:]
     for i in range(0, a.__len__() - 1):
         key = a[i]
         pos = i
@@ -18,8 +18,7 @@ def SelectionSort(A):
 
 # now let's have a try
 a = [31, 41, 59, 26, 41, 58]
-b = SelectionSort(a)
+a = SelectionSort(a)
 for i in a:
     print(i)
 
-print(a==b)
