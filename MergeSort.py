@@ -32,7 +32,8 @@ def MSort(A, p, r):
 
 
 def MergeSort(A):
-    return MSort(A, 0, A.__len__())
+    a = A
+    return MSort(a, 0, a.__len__())
 
 # little test
 a = [6, 5, 4, 3, 2, 1, 0]

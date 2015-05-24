@@ -4,14 +4,15 @@ __date__ = '2015.5.24'
 
 
 def InsertionSort(A):
-    for i in range(1, A.__len__()):
-        key = A[i]
+    a = A
+    for i in range(1, a.__len__()):
+        key = a[i]
         j = i - 1
-        while j >= 0 and A[j] > key:
-            A[j + 1] = A[j]
+        while j >= 0 and a[j] > key:
+            a[j + 1] = a[j]
             j -= 1
-        A[j + 1] = key
-    return A
+        a[j + 1] = key
+    return a
 
 # now let's have a try
 a = [31, 41, 59, 26, 41, 58]
