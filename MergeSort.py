@@ -4,12 +4,11 @@ __date__ = '2015.5.24'
 
 
 def merge(A, p, q, r):
-    L = range(0, q - p + 1)     # L cannot change size?
-    R = range(0, r - q + 1)
-    L[0:q - p] = A[p:q]
-    R[0:r - q] = A[q:r]
-    L[q - p] = float("inf")     # sentinel
-    R[r - q] = float("inf")
+    import copy
+    L = copy.deepcopy(A[p:q])
+    R = copy.deepcopy(A[q:r])
+    L.append(float("inf"))      # sentinel
+    R.append(float("inf"))
     i = 0
     j = 0
     for k in range(p, r):
